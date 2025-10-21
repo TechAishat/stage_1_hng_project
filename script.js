@@ -47,6 +47,37 @@ const initFooterYear = () => {
   yearSpan.textContent = new Date().getFullYear();
 };
 
+const initCurrentTime = () => {
+  const timeEl = document.getElementById('current-time');
+
+  if (!timeEl) {
+    return;
+  }
+
+  const formatTime = (date) => {
+    return date.toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true,
+    });
+  };
+
+  const updateTime = () => {
+    timeEl.textContent = formatTime(new Date());
+  };
+
+  updateTime();
+  const timer = window.setInterval(updateTime, 60 * 1000);
+
+  window.addEventListener(
+    'beforeunload',
+    () => {
+      window.clearInterval(timer);
+    },
+    { once: true }
+  );
+};
+
 const validateContactForm = (form) => {
   const nameInput = form.querySelector('[data-testid="test-contact-name"]');
   const emailInput = form.querySelector('[data-testid="test-contact-email"]');
@@ -165,6 +196,7 @@ const initContactValidation = () => {
 const initApp = () => {
   initNavigationToggle();
   initFooterYear();
+  initCurrentTime();
   initContactValidation();
 };
 

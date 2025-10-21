@@ -39,52 +39,45 @@
     <main id="main-content" class="site-main">
       <section class="hero" data-testid="test-home-hero">
         <div class="container hero__inner">
-          <div class="hero__content">
-            <p class="eyebrow">Frontend Developer</p>
-            <h1>Crafting Inclusive Web Experiences</h1>
+          <figure class="hero__media" aria-label="Portrait of Aishat">
+            <div class="hero__portrait" role="presentation"></div>
+          </figure>
+          <section class="hero__content">
+            <p class="eyebrow">Tech Aishat</p>
+            <h1>Web Developer | Creative Problem Solver</h1>
             <p>
               Hi, I&apos;m Aishat — a frontend engineer dedicated to blending
               accessibility, performance, and aesthetic detail into every
               project. Explore my journey and get in touch to collaborate.
             </p>
+            <p class="hero__time">
+              Current time: <span id="current-time" data-testid="test-current-time">--:-- --</span>
+            </p>
             <div class="hero__actions">
               <a class="button button--primary" href="about.html">Learn More</a>
               <a class="button button--ghost" href="contact.html">Work with me</a>
             </div>
-          </div>
-          <figure class="hero__media" aria-label="Portrait of Aishat">
-            <div class="hero__portrait" role="presentation"></div>
-          </figure>
+          </section>
         </div>
       </section>
 
       <section class="highlights" aria-labelledby="highlights-heading">
         <div class="container">
-          <h2 id="highlights-heading">Focus Areas</h2>
-          <div class="highlights__grid">
-            <article class="card" data-testid="test-home-focus-accessibility">
-              <h3>Accessibility</h3>
-              <p>
-                I ship interfaces that everyone can navigate—supporting screen
-                readers, keyboard interactions, and sufficient contrast by
-                default.
-              </p>
-            </article>
-            <article class="card" data-testid="test-home-focus-performance">
-              <h3>Performance</h3>
-              <p>
-                From efficient assets to optimized rendering, I balance
-                delightful visuals with fast delivery.
-              </p>
-            </article>
-            <article class="card" data-testid="test-home-focus-collaboration">
-              <h3>Collaboration</h3>
-              <p>
-                I translate cross-functional ideas into polished products,
-                communicating clearly with designers, engineers, and clients.
-              </p>
-            </article>
-          </div>
+          <h2 id="highlights-heading">Professional Highlights</h2>
+          <ul class="highlights__list" data-testid="test-home-professional-highlights">
+            <li data-testid="test-user-experience-kyeston">
+              Leading full-stack delivery at Kyeston Group Nigeria Limited.
+            </li>
+            <li data-testid="test-user-experience-teamwork">
+              Partnering with cross-functional teams to ship inclusive products.
+            </li>
+            <li data-testid="test-user-experience-learning">
+              Continually exploring modern frameworks and performance practices.
+            </li>
+            <li data-testid="test-user-experience-communication">
+              Open to new collaborations at aaishat122@gmail.com.
+            </li>
+          </ul>
         </div>
       </section>
 
