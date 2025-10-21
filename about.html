@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Aishat Adamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">Tech Aishat</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          data-testid="test-nav-toggle"
+        >
+          <span class="nav-toggle__label">Menu</span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-navigation" class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a aria-current="page" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main" data-testid="test-about-page">
+      <header class="container page-header">
+        <p class="eyebrow">Journey so far</p>
+        <h1>About Aishat</h1>
+        <p class="page-lead">
+          I&apos;m evolving from crafting single-card experiences to architecting
+          purposeful, multi-page applications—keeping empathy and accessibility at
+          the center of every decision.
+        </p>
+      </header>
+
+      <div class="container about-grid">
+        <section data-testid="test-about-bio">
+          <h2>Who I am</h2>
+          <p>
+            I&apos;m a frontend developer blending a background in product strategy with
+            hands-on engineering. My mission is to craft digital solutions that feel
+            intuitive, inclusive, and delightful—no matter the device or ability of
+            the person on the other side of the screen.
+          </p>
+          <p>
+            Beyond the code editor, I love exploring visual storytelling,
+            collaborating with cross-functional teams, and learning by teaching
+            others. Curiosity keeps me iterating.
+          </p>
+        </section>
+
+        <section data-testid="test-about-goals">
+          <h2>Goals in this program</h2>
+          <ul>
+            <li>Master accessible design systems and reusable UI patterns.</li>
+            <li>Deepen my frontend testing workflow across multiple devices.</li>
+            <li>Collaborate with peers to ship production-ready experiences.</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-about-confidence">
+          <h2>Areas of low confidence</h2>
+          <p>
+            I&apos;m steadily growing my confidence with performance profiling and
+            complex state management. To improve, I pair-program with peers, break
+            problems into smaller experiments, and document the lessons I learn.
+          </p>
+        </section>
+
+        <section data-testid="test-about-future-note">
+          <h2>Note to future self</h2>
+          <p>
+            Remember the spark you feel when a user experiences a feature you built
+            and smiles. Keep asking great questions, stay humble, and let empathy
+            steer your decisions.
+          </p>
+        </section>
+
+        <section data-testid="test-about-extra">
+          <h2>Extra thoughts</h2>
+          <p>
+            This journey isn&apos;t just about code—it&apos;s about community. I&apos;m grateful
+            for mentors, teammates, and friends who challenge me to grow, and I&apos;m
+            committed to doing the same for others.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>&copy; <span id="footnote-year"></span> Aishat Adamu. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:aaishat122@gmail.com">Email</a></li>
+          <li><a href="https://github.com/aaishat" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/aishat-adamu" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

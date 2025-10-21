@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aishat Adamu | Frontend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">Tech Aishat</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          data-testid="test-nav-toggle"
+        >
+          <span class="nav-toggle__label">Menu</span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-navigation" class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <section class="hero" data-testid="test-home-hero">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Frontend Wizard</p>
+            <h1>Crafting Inclusive Web Experiences</h1>
+            <p>
+              Hi, I&apos;m Aishat — a frontend engineer dedicated to blending
+              accessibility, performance, and aesthetic detail into every
+              project. Explore my journey and get in touch to collaborate.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="about.html">Learn More</a>
+              <a class="button button--ghost" href="contact.html">Work with me</a>
+            </div>
+          </div>
+          <figure class="hero__media" aria-label="Portrait of Aishat">
+            <div class="hero__portrait" role="presentation"></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="highlights" aria-labelledby="highlights-heading">
+        <div class="container">
+          <h2 id="highlights-heading">Focus Areas</h2>
+          <div class="highlights__grid">
+            <article class="card" data-testid="test-home-focus-accessibility">
+              <h3>Accessibility</h3>
+              <p>
+                I ship interfaces that everyone can navigate—supporting screen
+                readers, keyboard interactions, and sufficient contrast by
+                default.
+              </p>
+            </article>
+            <article class="card" data-testid="test-home-focus-performance">
+              <h3>Performance</h3>
+              <p>
+                From efficient assets to optimized rendering, I balance
+                delightful visuals with fast delivery.
+              </p>
+            </article>
+            <article class="card" data-testid="test-home-focus-collaboration">
+              <h3>Collaboration</h3>
+              <p>
+                I translate cross-functional ideas into polished products,
+                communicating clearly with designers, engineers, and clients.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" data-testid="test-home-cta">
+        <div class="container cta__inner">
+          <div>
+            <h2>Let&apos;s build something lasting</h2>
+            <p>
+              I&apos;m currently open to new opportunities and collaborations. Drop
+              a message and let&apos;s talk through your next big idea.
+            </p>
+          </div>
+          <a class="button button--primary" href="contact.html">Start a project</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>&copy; <span id="footnote-year"></span> Aishat Adamu. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:aaishat122@gmail.com">Email</a></li>
+          <li><a href="https://github.com/aaishat" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/aishat-adamu" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

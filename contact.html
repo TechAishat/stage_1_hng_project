@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Aishat Adamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">Tech Aishat</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          data-testid="test-nav-toggle"
+        >
+          <span class="nav-toggle__label">Menu</span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-navigation" class="site-nav__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a aria-current="page" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <section class="container" aria-labelledby="contact-heading">
+        <header class="page-header">
+          <p class="eyebrow">Get in touch</p>
+          <h1 id="contact-heading">Contact</h1>
+          <p class="page-lead">
+            I&apos;d love to hear about your next idea, collaboration, or feedback.
+            Complete the form below and I&apos;ll get back within two business days.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <aside class="contact-info" aria-label="Alternative contact options">
+            <h2>Connect directly</h2>
+            <p>
+              Prefer a quick message? Reach out through any of these channels and I&apos;ll
+              respond shortly.
+            </p>
+            <ul class="contact-info__list" data-testid="test-contact-social-links">
+              <li>
+                <a
+                  href="mailto:aaishat122@gmail.com"
+                  class="contact-info__icon contact-info__icon--email"
+                  data-testid="test-contact-social-email"
+                  aria-label="Email: aaishat122@gmail.com"
+                >
+                  <span class="contact-info__value">aaishat122@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/2349059204982"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-info__icon contact-info__icon--whatsapp"
+                  data-testid="test-contact-social-whatsapp"
+                  aria-label="WhatsApp: 0905 920 4982"
+                >
+                  <span class="contact-info__value">0905 920 4982</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/aishat.adamu.745588/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-info__icon contact-info__icon--facebook"
+                  data-testid="test-contact-social-facebook"
+                  aria-label="Facebook: @aishat.adamu.745588"
+                >
+                  <span class="contact-info__value">@aishat.adamu.745588</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/aishat_love1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-info__icon contact-info__icon--instagram"
+                  data-testid="test-contact-social-instagram"
+                  aria-label="Instagram: @aishat_love1"
+                >
+                  <span class="contact-info__value">@aishat_love1</span>
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <form
+            class="form contact-form"
+            novalidate
+            data-testid="test-contact-form"
+            aria-describedby="contact-form-description"
+          >
+            <p id="contact-form-description" class="form__help">
+              All fields are required. I respect your privacy and won&apos;t share your
+              details.
+            </p>
+
+            <div class="form__group">
+              <label class="form__label" for="contact-name">Full name</label>
+              <input
+                class="form__control"
+                type="text"
+                id="contact-name"
+                name="fullName"
+                autocomplete="name"
+                required
+                data-testid="test-contact-name"
+                aria-describedby="contact-name-error"
+              />
+              <p
+                id="contact-name-error"
+                class="form__error"
+                role="alert"
+                data-testid="test-contact-error-name"
+                hidden
+              ></p>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="contact-email">Email address</label>
+              <input
+                class="form__control"
+                type="email"
+                id="contact-email"
+                name="email"
+                autocomplete="email"
+                required
+                data-testid="test-contact-email"
+                aria-describedby="contact-email-error"
+              />
+              <p
+                id="contact-email-error"
+                class="form__error"
+                role="alert"
+                data-testid="test-contact-error-email"
+                hidden
+              ></p>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="contact-subject">Subject</label>
+              <input
+                class="form__control"
+                type="text"
+                id="contact-subject"
+                name="subject"
+                required
+                data-testid="test-contact-subject"
+                aria-describedby="contact-subject-error"
+              />
+              <p
+                id="contact-subject-error"
+                class="form__error"
+                role="alert"
+                data-testid="test-contact-error-subject"
+                hidden
+              ></p>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="contact-message">Message</label>
+              <textarea
+                class="form__control"
+                id="contact-message"
+                name="message"
+                minlength="10"
+                required
+                data-testid="test-contact-message"
+                aria-describedby="contact-message-error"
+              ></textarea>
+              <p
+                id="contact-message-error"
+                class="form__error"
+                role="alert"
+                data-testid="test-contact-error-message"
+                hidden
+              ></p>
+            </div>
+
+            <div class="form__actions">
+              <button
+                class="button button--primary"
+                type="submit"
+                data-testid="test-contact-submit"
+              >
+                Send message
+              </button>
+              <p
+                class="form__success"
+                role="status"
+                data-testid="test-contact-success"
+                hidden
+              >
+                Thanks! Your message was sent successfully.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>&copy; <span id="footnote-year"></span> Aishat Adamu. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:aaishat122@gmail.com">Email</a></li>
+          <li><a href="https://github.com/aaishat" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/aishat-adamu" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
