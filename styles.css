@@ -128,8 +128,7 @@ select:focus-visible {
   position: absolute;
   inset: calc(100% + 0.5rem) 0 auto auto;
   margin: 0 auto;
-  padding: 0;
-  padding-left: 40rem;
+  padding: 0.25rem 0.75rem;
   transform: translateY(-10px);
   opacity: 0;
   visibility: hidden;
@@ -162,7 +161,8 @@ select:focus-visible {
   color: #f9fafb;
 }
 
-.nav-toggle[aria-expanded="true"] + nav {
+.nav-toggle[aria-expanded="true"] + nav,
+.site-nav--visible {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -658,9 +658,13 @@ textarea.form__control {
 
   .site-nav {
     position: static;
+    inset: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
     opacity: 1;
     visibility: visible;
-    transform: none;
+    width: auto;
     max-width: none;
     margin-left: auto;
   }

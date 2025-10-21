@@ -1,22 +1,39 @@
 const initNavigationToggle = () => {
   const navToggle = document.querySelector('[data-testid="test-nav-toggle"]');
   const navList = document.getElementById('primary-navigation');
+  const siteNav = navToggle?.closest('.site-header__inner')?.querySelector('.site-nav');
 
   if (!navToggle || !navList) {
     return;
   }
 
+  const closeNav = () => {
+    navToggle.setAttribute('aria-expanded', 'false');
+    siteNav?.classList.remove('site-nav--visible');
+  };
+
   navToggle.addEventListener('click', () => {
     const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
     navToggle.setAttribute('aria-expanded', String(!isExpanded));
+    if (!isExpanded) {
+      siteNav?.classList.add('site-nav--visible');
+    } else {
+      siteNav?.classList.remove('site-nav--visible');
+    }
   });
 
   navList.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       if (window.innerWidth < 780) {
-        navToggle.setAttribute('aria-expanded', 'false');
+        closeNav();
       }
     });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 780) {
+      closeNav();
+    }
   });
 };
 
